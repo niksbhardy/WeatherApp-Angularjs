@@ -2,7 +2,9 @@
   "name": "weather-app-angularjs",
   "version": "0.0.0",
   "author": "Mayank Bhardwaj",
-  "private": true,
+  "engines": {
+    "node": "8.9.1"
+  },
   "scripts": {
     "start": "node server/server.js",
     "heroku-postbuild": "node server/server.js"
