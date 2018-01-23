@@ -2,12 +2,14 @@
   "name": "weather-app-angularjs",
   "version": "0.0.0",
   "author": "Mayank Bhardwaj",
+  "license": "MIT",
+  "description": "A sample angularjs weather app",
   "engines": {
     "node": "8.9.1"
   },
+  "main": "app.js",
   "scripts": {
-    "start": "node server/server.js",
-    "heroku-postbuild": "node server/server.js"
+    "start": "node server/server.js"
   },
   "dependencies": {
     "express": "4.15.2"
