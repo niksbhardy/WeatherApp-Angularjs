@@ -4,7 +4,8 @@
   "author": "Mayank Bhardwaj",
   "private": true,
   "scripts": {
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "node server/server.js"
   },
   "dependencies": {
     "express": "4.15.2"
