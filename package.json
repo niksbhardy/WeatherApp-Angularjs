@@ -1,0 +1,12 @@
+{
+  "name": "weather-app-angularjs",
+  "version": "0.0.0",
+  "author": "Mayank Bhardwaj",
+  "private": true,
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "4.15.2"
+  }
+}

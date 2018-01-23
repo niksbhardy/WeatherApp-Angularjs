@@ -1,0 +1,25 @@
+
+<p><a href="#/">Back to search</a></p>
+
+Forecast for {{city}}
+<hr />
+
+<p class="alert alert-danger" ng-show="weatherData.status===404">Error fetching data. Please check whether you typed city name correct.</p>
+<div ng-show="!isLoading" ng-hide="weatherData.status === 404">
+	Days: <a href="#/forecast/2" ng-class="{'bg-primary': days === '2'}" >2</a> | 
+	<a href="#/forecast/5" ng-class="{'bg-primary': days === '5'}" >5</a> | 
+	<a href="#/forecast/7" ng-class="{'bg-primary': days === '7'}" >7</a>
+	<div ng-repeat="weather in weatherData.list">
+		<div class="row">
+			<div col-md-12>
+				<weather-report 
+					weather-day="weather"
+					convert-to-standard="convertToCelcius(daytimeTemp)"
+					convert-to-date="convertToDate(date)"
+					date-format="MMM d, y"						
+				></weather-report>
+			</div>
+		</div>
+	</div>
+</div>
+<p ng-show="isLoading===true">Loading...</p>
